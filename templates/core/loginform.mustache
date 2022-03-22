@@ -208,7 +208,12 @@ Example context (json):
         </div>
     {{/alertbox}}
     {{^alertbox}}
-         <div class="row mt-3"></div>
+        {{#showfooter}}   
+             <div class="row mt-3"></div>
+        {{/showfooter}}
+        {{^showfooter}}   
+             <div class="row my-5"></div>
+        {{/showfooter}}
     {{/alertbox}}
 
     <div class="row">
